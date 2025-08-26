@@ -1,5 +1,5 @@
-# Lyme Disease
-NSS Capstone Project- Lyme Disease in the US
+# Lyme Disease: Case Trends, Climate, and Risk Across the United States
+Nashville Software School Capstone Project
 
 
 
@@ -16,7 +16,8 @@ NSS Capstone Project- Lyme Disease in the US
 
 
 ## Motivation:
-I grew up just north of New York City and spent a lot of time outdoors and my family often traveled around the Northeast, visiting states like Pennsylvania, New Jersey, and Massachusetts. I contracted Lyme disease twice as a kid, but was lucky to be diagnosed early both times and fully recovered. After moving to Nashville in 2012, I was told Lyme was not really an issue and I accepted that without question. This project gave me the chance to finally look into that claim and explore the data myself, which became the main motivation behind my analysis.
+I grew up in New York just 30 miles north of New York City in the suburbs. As a kid, I contracted Lyme disease twice, which we caught early, so I was able to get treated and made a full recovery with no lasting effects. Then I moved down to Nashville in 2012 and remember being told there really was no Lyme disease down here, but I never looked into it. This project allowed me to actually dig into the data and investigate whether that claim was true or not.
+
 
 ## Questions:
 1.	How has Lyme disease changed over the past several decades in the United States?
@@ -33,15 +34,35 @@ I grew up just north of New York City and spent a lot of time outdoors and my fa
 
 
 ## Normalizing the Data
-NEED TO FILL OUT
+To ensure consistency and comparability across datasets, I took the following steps:
+
+1. Aligned Time Frames:
+*The county and state level Lyme disease datasets covered different year ranges. I selected a common time frame available in both and removed any years outside that range.
+
+2. Filtered County-Level Data:
+*Rows corresponding to regions were excluded to maintain data at the county level.
+
+3. Cleaned State Names:
+*In the state-level dataset, certain state names included superscripts for footnotes. These were removed to ensure consistent naming across datasets.
+
+4. Reshaped Year Columns:
+*Years were originally listed as column headers. The data was transposed so that years became a single column, enabling easier filtering and analysis by year.
+
+5. Synchronized Date Formats:
+*Dates in the temperature dataset were converted to match the year based time frame used in the case count data.
+
+6. Refined Census Data:
+*Extraneous columns, headers, and footnotes were removed. State and county names were cleaned to align with the CDC’s dataset.
+
+7. Calculated Incidence Rates:
+*Census population data was used to normalize the Lyme disease case counts, allowing for the calculation of incidence rates to display fair comparisons across regions and over time.
 
 
-The dataset I selected mainly consisted of years from 1970 through 2019. I selected the most recent given data - 2019. I then created multiple dataframes and narrowed down to the values that I wanted to use for my analysis. My initial approach was to use data from 2 years 2015 and 2019 and then compare the difference/ correlation, after having done the entire process in Python I realized that there was not much of a difference between the two and therefore I ended up using 2019 data.
 
 ## Problems and Hurdles
-NEED TO FILL OUT
+There were a lot of differing time frames available for the Lyme disease data from the CDC depending on the geographical level, so had to choose which windows of time to use in order to adequately analyze the data. ALso, the population data from the Census Bureau had a lot of extra headers, footnotes, columns, etc. that needed to be cleaned to make it usable.
 
-It was a challenge to clean and organize data in Python for some of the dataset. Statistical Risk Assessment data consisted of values in log format and that required some calculation in python to convert it to readable value. Web- scarping Global Peace Index was another hurdle that took some time to work.
+
 
 ## Technologies Used
 1) Python / Pandas / Matplotlib / Seaborn- for explorating, normalizing, aggregating, and visualizing of data
@@ -50,20 +71,20 @@ It was a challenge to clean and organize data in Python for some of the dataset.
 4) Git - for version control
 
 ## Data Sources
-To answer the above questions I used the following sources to collect datasets for my analysis
+To answer the above questions I used the following sources to collect datasets for my analysis:
 
 Centers for Disease Control and Prevention (CDC)- Lyme disease surveillance datasets with varying timeframes
-•	https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html	
+*https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html	
 
 National Centers for Environmental Information (NCEI)- temperature data on the national, regional, and state level
-•	https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
+*https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
 
 United States Census Bureau- population data on a national, state, and county level
-•	https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html	
-•	https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
+*https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html	
+*https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
 
 
 ## Conclusion
-NEED TO FILL OUT
+Cases of Lyme disease have been steadily growing in the United States over the past 30 years. There are certain regions like the Northeast and North-Central that are most inflicted by this disease. States like New York, Pennsylvania, and Wisconsin routinely have a very high number of cases. When we take population into account though, we see that states in New England are actually the most at risk for Lyme. If we narrow our focus down to Tennessee and Davidson County in particular, the risk is almost non-existent with Davidson County only having 3 cases in the last reported year. Over the past 15 years, we have seen states like Ohio and West Virginia start to see a significant increase in their number of cases. The analysis shows that one contributing factor may be rising temperatures during the winter that allow ticks to have a longer active season and more opportunity to contract and spread the Lyme disease bacteria. There are a lot of variables when it comes to Lyme disease, but cases appears to be growing, so it is best to take precautions and always check yourself for ticks!
 
-The data analysis shows countries with most incoming immigrants are USA, UK, Saudi Arabia, Russia, Germany, Australia, France, Italy and Canada. It is given that theses countries have better opportunities for work, health and education that can drive people to move for better life for themselves and their loved ones. Countries where people are moving from include Mexico, India, Syria, Ukraine, China, Russia, Pakistan, Philippines, Afghanistan. My analysis shows some of these countries are ranked high in statistical risk assessment for mass killing however the correlation was not sufficient enough to claim that this could be the cause of migration. Most of the countries are developing countries and it could be concluded that violence, religious freedom, and unemployment could also play a vital role in migration.
+
