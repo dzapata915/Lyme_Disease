@@ -37,25 +37,32 @@ I grew up in New York just 30 miles north of New York City in the suburbs. As a 
 To ensure consistency and comparability across datasets, I took the following steps:
 
 1. Aligned Time Frames:
-    -The county and state level Lyme disease datasets covered different year ranges. I selected a common time frame available in both and removed any years outside that range.
+
+    - The county and state level Lyme disease datasets covered different year ranges. I selected a common time frame available in both and removed any years outside that range.
 
 2. Filtered County-Level Data:
-    -Rows corresponding to regions were excluded to maintain data at the county level.
+
+    - Rows corresponding to regions were excluded to maintain data at the county level.
 
 3. Cleaned State Names:
-    -In the state-level dataset, certain state names included superscripts for footnotes. These were removed to ensure consistent naming across datasets.
+
+    - In the state-level dataset, certain state names included superscripts for footnotes. These were removed to ensure consistent naming across datasets.
 
 4. Reshaped Year Columns:
-    -Years were originally listed as column headers. The data was transposed so that years became a single column, enabling easier filtering and analysis by year.
+
+    - Years were originally listed as column headers. The data was transposed so that years became a single column, enabling easier filtering and analysis by year.
 
 5. Synchronized Date Formats:
-    -Dates in the temperature dataset were converted to match the year based time frame used in the case count data.
+
+    - Dates in the temperature dataset were converted to match the year based time frame used in the case count data.
 
 6. Refined Census Data:
-    -Extraneous columns, headers, and footnotes were removed. State and county names were cleaned to align with the CDC’s dataset.
+
+    - Extraneous columns, headers, and footnotes were removed. State and county names were cleaned to align with the CDC’s dataset.
 
 7. Calculated Incidence Rates:
-    -Census population data was used to normalize the Lyme disease case counts, allowing for the calculation of incidence rates to display fair comparisons across regions and over time.
+
+    - Census population data was used to normalize the Lyme disease case counts, allowing for the calculation of incidence rates to display fair comparisons across regions and over time.
 
 
 
@@ -74,14 +81,17 @@ There were varying time frames available for the Lyme disease data from the CDC 
 To answer the above questions I used the following sources to collect datasets for my analysis:
 
 Centers for Disease Control and Prevention (CDC)- Lyme disease surveillance datasets with varying timeframes
-    -https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html	
+
+    - https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html	
 
 National Centers for Environmental Information (NCEI)- temperature data on the national, regional, and state level
-    -https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
+
+    - https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
 
 United States Census Bureau- population data on a national, state, and county level
-    -https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html	
-    -https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
+
+    - https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html	
+    - https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
 
 
 ## Conclusion
