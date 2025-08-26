@@ -78,20 +78,17 @@ There were varying time frames available for the Lyme disease data from the CDC 
 4) Git - for version control
 
 ## Data Sources
-To answer the above questions I used the following sources to collect datasets for my analysis:
+To answer the above questions, I used the following sources to collect datasets for my analysis:
 
-Centers for Disease Control and Prevention (CDC)- Lyme disease surveillance datasets with varying timeframes
+**Centers for Disease Control and Prevention (CDC)** – Lyme disease surveillance datasets with varying timeframes  
+- https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html
 
-    - https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html	
+**National Centers for Environmental Information (NCEI)** – Temperature data on the national, regional, and state level  
+- https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
 
-National Centers for Environmental Information (NCEI)- temperature data on the national, regional, and state level
-
-    - https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/
-
-United States Census Bureau- population data on a national, state, and county level
-
-    - https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html	
-    - https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
+**United States Census Bureau** – Population data on a national, state, and county level  
+- https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html  
+- https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html
 
 
 ## Conclusion
